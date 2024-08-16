@@ -1,0 +1,10 @@
+services:
+  nginx-serve-dir:
+    build: .
+    image: yoiqsram/serve-dir:0.1
+    ports:
+      - "8080:80"
+    # adjust volumes to bind directories to be served
+    # make sure it's all in /www/data
+    # volumes:
+    #   - /path/to/dir:/www/data/dir
